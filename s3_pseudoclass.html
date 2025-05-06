@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S3 Pseudoclass</title>
+    <style>
+        a:link {
+            color: green;
+            /* màu của link chưa được click */
+            text-decoration: none;
+            /* bỏ gạch chân */
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:active {
+            color: red;
+            /* màu của link đang được click */
+        }
+
+        a:hover,
+        p:hover {
+            background-color: lightblue;
+            color: pink;
+            /* màu của link khi hover chuột vào */
+        }
+
+        p::first-letter {
+            font-size: 30px;
+            /* chữ cái đầu tiên của đoạn văn */
+            color: red;
+        }
+
+        div::first-line {
+            /* dòng đầu tiên của đoạn văn */
+            color: orangered;
+        }
+        div:first-child{
+                background-color: lightgreen;
+                color: black;
+                font-size: 60px;
+        /* dòng đầu tiên của div */
+        }
+        h5::before {
+            content: "Insert before</h5>";
+            color: red;
+        }
+        h5::after {
+            content: "Insert after</h5>";
+            color: violet;
+        }
+
+    </style>
+</head>
+
+<body>
+    <a href="https://www.cs50.harvard.edu">This is a link</a>
+    <p>This is a paragraph</p>
+    <div>
+        This is the 1st line <br>
+        This is the 2nd line <br>
+        This is the 3rd line 
+    </div>
+    <hr>
+    <div>
+        <div>This is the 1st child</div> 
+        <div>This is the 2nd child </div> 
+        <div>This is the 3rd child </div>
+    </div>
+
+    <h5>Using :before and :after</h5>
+</body>
+
+</html>

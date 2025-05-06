@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S3 Selector</title>
+    <style>
+        /* universal selector ~ tương ứng với body. Có độ ưu tiên nhỏ nhất*/
+        * {
+            font-family: Arial, sans-serif;
+            color: red;
+        }
+
+        /* type selector */
+        div {
+            background-color: lightblue;
+            color: white;
+        }
+
+        /* class selector có độ ưu tiên cao hơn type selector */
+        .myClass {
+            background-color: lightgreen;
+            color: black;
+        }
+
+        /* id selector - giá trị của id là unique ko được trùng. id có độ ưu tiên cao hơn class */
+        #myId {
+            background-color: lightcoral;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="myClass">This is Div 1</div>
+    <div id="myId" class="myClass">This is Div 2</div>
+    <div>This is Div 3</div>
+    <p class="myClass">This is paragraph</p>
+    <p>This is paragraph 2</p>
+</body>
+
+</html>

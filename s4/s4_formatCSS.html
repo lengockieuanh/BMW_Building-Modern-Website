@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S4 Format CSS</title>
+    <style>
+        p {
+            font-size: 20px;
+            color: red;
+            text-align: center;
+            background-color: lightblue;
+            text-decoration: underline;
+            text-transform: capitalize;
+            text-shadow: 3px 3px 3px gray;
+            word-spacing: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 30px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+
+            font-weight: 900;
+            font-size: 20px;
+        }
+
+        .div0 {
+            /* indent: chỉ thụt dòng đầu tiên */
+            text-indent: 50px;
+            color: red;
+        }
+
+        span {
+            color: green;
+            text-decoration: underline;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 20px;
+        }
+
+        .div1 {
+            margin: 20px;
+            padding: 20px;
+            border-style: solid;
+            border-color: grey;
+            border-width: medium;
+            background-color: lightgreen;
+            color: green;
+            font-size: 20px;
+        }
+
+        .div2 {
+            margin: 20px 40px;
+            padding: 20px 40px;
+            /* top-bottom:20px left-right:40px */
+            border: dashed green thick;
+            color: violet;
+        }
+
+        .div3 {
+            margin: 20px 40px 60px;
+            padding: 20px 40px 60px;
+            /* top:20px left-right:40px bottom:60px */
+            border: dotted 5px;
+            color: violet;
+        }
+
+        .div4 {
+            margin: 20px 40px 60px 80px;
+            padding: 20px 40px 60px 80px;
+            border-style: solid double dotted dashed;
+            /*4 stylés khác nhau cho 4 cạnh phải dùng border-style ko được để border*/
+            border-width: 5px;
+            /* top:5px right:10px bottom:15px left:20px */
+            color: orange;
+        }
+
+        .div5 {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 30px;
+            border: solid;
+            color: plum;
+        }
+
+        .div6 {
+            margin: auto;
+            border: solid;
+            height: 200px;
+            width: 400px;
+            text-align: center;
+            /* Center: Canh giữa nội dung trong div */
+            line-height: 200px;
+            /* Canh giữa nội dung theo chiều dọc */
+        }
+
+        .div7 {
+            padding: 20px;
+            border: solid red;
+            background-color: red;
+            color: yellow;
+            height: 200px;
+            width: 300px;
+            font-weight: bold;
+            font-size: 200px;
+            text-align: center;
+            line-height: 200px;
+            box-shadow: 5px 5px 5px rgb(236, 140, 140);
+            position: fixed;
+            left: 45%;
+            bottom: 45%;
+            z-index: 1;
+        }
+        .div8 {
+            position: relative; /*thay đổi vị trí so với vị trí mặc định của nó*/
+            left: 100px;
+            /* top: 100px; */
+            right: 100px;
+            background-color: rgb(5, 38, 49);
+            color: greenyellow;
+            font-size: 20px;
+            padding: 20px;
+            border: solid;
+        }
+        .div9 {
+            position: absolute;
+            top: 60px;
+            background-color: rgb(5, 38, 49);
+            color: greenyellow;
+            font-size: 20px;
+            border: solid;
+        }
+        .div10 {
+            position: relative;
+            color: orange;
+            border: solid red;
+            width: 400px;
+            height: 400px;
+        }
+        .div11 {
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            width: 200px;
+            height: 200px;
+            color: blueviolet;
+            border: solid;
+        }
+        .div12 {
+            color: orange;
+            border: solid;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: inline;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <p>This is paragraph</p>
+
+    <a href="">Link using remove underline</a>
+
+    <hr>
+
+    <div class="div0">Using <span>text-indent</span>: It is a long established fact that a reader will be distracted by
+        the readable content of a page when looking at
+        its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+        opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
+        packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+        will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
+        accident, sometimes on purpose (injected humour and the like).</div>
+
+    <!-- padding: 1 tham số -->
+    <hr>
+    <div class="div1">
+
+        <span>Using padding 1 argument</span>: It is a long established fact that a reader will be distracted by the
+        readable content of a page when looking at
+        its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+        opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
+        packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+        will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
+        accident, sometimes on purpose (injected humour and the like).
+    </div>
+
+
+    <hr>
+
+    <div class="div2">
+
+        <span>Using padding 2 arguments</span>: It is a long established fact that a reader will be distracted by the
+        readable content of a page when looking at
+        its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+        opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
+        packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+        will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
+        accident, sometimes on purpose (injected humour and the like).
+    </div>
+
+    <hr>
+
+    <div class="div3">
+
+        <span>Using padding 3 arguments</span>: It is a long established fact that a reader will be distracted by the
+        readable content of a page when looking at
+        its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+        opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
+        packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+        will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
+        accident, sometimes on purpose (injected humour and the like).
+    </div>
+
+    <hr>
+
+    <div class="div4">
+
+        <span>Using padding 4 arguments</span>: It is a long established fact that a reader will be distracted by the
+        readable content of a page when looking at
+        its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+        opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
+        packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+        will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
+        accident, sometimes on purpose (injected humour and the like).
+    </div>
+    <hr>
+
+    <div class="div5">
+
+        <span>Using padding custom</span>: It is a long established fact that a reader will be distracted by the
+        readable content of a page when looking at
+        its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+        opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
+        packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+        will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
+        accident, sometimes on purpose (injected humour and the like).
+    </div>
+
+    <!-- horizontal & vertical alignment -->
+    <hr>
+
+    <div class="div6">
+        horizontal: text-align (width)
+        vertical: line-height (height)
+    </div>
+
+    <hr>
+    <!-- position: fixed -->
+    <div class="div7">
+        ★
+    </div>
+
+    <hr>
+    <!-- position: relative -->
+    <div class="div8">
+        Relative
+    </div>
+
+    <hr>
+    <!-- position: absolute -->
+    <div class="div9">
+        Absoblute
+    </div>
+
+    <hr>
+    <div class="div10"> 
+        Parent
+        <div class="div11"> 
+            Child 
+        </div>
+    </div>
+
+    <hr>
+   <div class="div12">1</div>
+   <div class="div12">2</div>
+   <div class="div12">3</div>
+
+</body>
+
+</html>

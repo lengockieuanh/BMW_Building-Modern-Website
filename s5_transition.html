@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s5_transition</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-image: linear-gradient(rgb(209, 60, 105), rgb(255, 247, 249));
+            margin: 20px;
+            color: aliceblue;
+        }
+        .trans1{
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+        }
+        .trans1:hover{
+            width: 400px;
+        }
+        .trans2{
+            transition-property: height;
+            transition-duration: 3s;
+            transition-timing-function: linear;
+            transition-delay: 1s;
+        }
+        .trans2:hover{
+            height: 400px;
+        }
+        .trans3{
+            transition: all 3s linear;
+        }
+        .trans3:hover{
+            height: 400px;
+            width: 400px;
+        }
+        .trans4{
+            transition: transform 2s;
+        }
+        .trans4:hover{
+            transform: scale(1.5);
+        }
+        .trans5{
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        .trans5:hover{
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="trans1"> Transition-width </div>
+    <div class="trans2"> Transition-height </div>
+    <div class="trans3"> Transition-all </div>
+    <div class="trans4"> Transition-transform </div>
+    <div class="trans5"> Transition-transform </div>
+</body>
+</html>
