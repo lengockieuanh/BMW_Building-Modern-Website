@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s9 Table</title>
+    <style>
+        table {
+            border: rgb(19, 17, 15);
+            border-collapse: collapse;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        
+        thead{
+            color: green;
+        }
+
+        td:nth-child(1){
+            text-align: center;
+        }
+
+        td:nth-child(2){
+            text-align: center;
+        }
+
+        td:nth-child(3){
+            text-align: center;
+        }
+        
+        td:nth-child(4){
+            text-align: center;
+        }
+
+        td:nth-child(5){
+            text-align: right;
+        }
+        
+        .total{
+            font-weight: bold;
+        }
+
+        .sum{
+            text-align: right;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>SubTotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Iphone 13</td>
+                <td>500 USD</td>
+                <td>1</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Iphone 15</td>
+                <td>600 USD</td>
+                <td>2</td>
+                <td>1200</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Iphone 16</td>
+                <td>800 USD</td>
+                <td>2</td>
+                <td>1600</td>
+            </tr>
+            <tr>
+                <td class="total" rowspan="2">Total</td>
+                <td colspan="5" class="sum">3300</td>
+            </tr>
+            <tr>
+                <td colspan="5">Thank you!</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
