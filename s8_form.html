@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s8 Form</title>
+    <style>
+        form{
+            border: salmon;
+            box-shadow: 0 0 10px green;
+            width: fit-content;
+            padding: 10px;
+            margin-left: 10px;
+        }
+
+        label{
+            width: 150px;
+            display: inline-block;
+        }
+
+        input{
+            border-radius: 3px;
+            padding: 2px;
+            margin: 5px;
+            color:rgb(99, 6, 249)
+        }
+
+        input[type="submit"]{
+            border: rgb(189, 248, 188);
+            background-color: rgb(189, 248, 188);
+            color:black;
+            padding: 5px;
+        }
+
+        input[type="reset"]{
+            border: rgb(189, 248, 188);
+            background-color: rgb(189, 248, 188);
+            color:black;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Register Form</h1>
+    <form action="s6_about.html">
+        <div>
+            <label for="">Your name</label>
+            <input type="text" required autofocus placeholder="Enter your name">
+        </div>
+        <div>
+            <label for="">Email</label>
+            <input type="email" required>
+        </div>
+        <div>
+            <label for="">Password</label>
+            <input type="password">
+        </div>
+        <div>
+            <label for="">Confirm Password</label>
+            <input type="password">
+        </div>
+        <div>
+            <label for="">Your favorite number</label>
+            <input type="number" value="0">
+        </div>
+        <div>
+            <label for="">Your birthday</label>
+            <input type="date">
+        </div>
+        <div>
+            <label for="">Your favorite color</label>
+            <input type="color" value="#FFFF00">
+        </div>
+        <div>
+            <label for="">Range</label>
+            <input type="range" min="0" max="10" value="3">
+        </div>
+        <div>
+            <label for="">Phone number</label>
+            <input type="tel">
+        </div>
+        <div>
+            <label for="">Gender</label>
+            <input type="radio" value="Male" name="gender">Male
+            <input type="radio" value="Female" name="gender">Female
+        </div>
+        <div>
+            <label for="">Your hobbies</label>
+            <input type="checkbox" value="Reading">Reading
+            <input type="checkbox" value="Playing game">Playing game
+            <input type="checkbox" value="Music">Music
+        </div>
+        <div>
+            <label for="">Your city</label>
+            <select name="" id="">
+                <option value="SG">Sai Gon</option>
+                <option value="HN">Ha Noi</option>
+                <option value="VL">Vinh Long</option>
+                <option value="NT">Nha Trang</option>
+            </select>
+
+            <input type="text" list="city">
+            <datalist id="city">
+                <option value="SG">Sai Gon</option>
+                <option value="HN">Ha Noi</option>
+                <option value="VL">Vinh Long</option>
+                <option value="NT">Nha Trang</option>
+            </datalist>
+        </div>
+        <div>
+            <label for="">Comments</label>
+            <textarea name="" id="" cols="40" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit">
+            <input type="reset">
+        </div>
+    </form>
+</body>
+</html>
