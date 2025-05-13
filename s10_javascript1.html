@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s10 JavaScripts</title>
+</head>
+<body>
+    <p>Paragraph</p>
+
+    <script>
+        document.write("In 'script': First line");
+        document.write('<br>In \'script\': Second line');
+        document.write('<br>In "script": Second line');
+        document.write("<br>In \"script\": Second line");
+        document.write("<h1> Heading 1 </h1>");
+
+        var x = 5;
+        let y = "5";
+        document.write("<br> x is " + x);
+        document.write("<br> y is " + y);
+        document.write(`<br> x is ${x}`);
+
+        document.write(`<br> x + 1 is ${x + 1}
+                        <br> y + 1 is ${y + 1}`);
+        
+        if (x == y){
+            document.write("<br> x is equal to y when using ==");
+        }
+        else{
+            document.write("<br> x is not equal to y when using ==");
+        }
+
+        if (x === y){
+            document.write("<br> x is equal to y when using ===");
+        }
+        else{
+            document.write("<br> x is not equal to y when using ===");
+        }
+
+        var a = 6;
+        var b = (a > x) ? "ok" : "not ok";
+        document.write("<br> b is " + b)
+    </script>
+
+</body>
+</html>

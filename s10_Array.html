@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s10 Array</title>
+</head>
+<body>
+    <script>
+        var numbers = new Array(3);
+        numbers[0] = 11;
+        numbers[1] = 2;
+        numbers[2] = 14;
+
+        var marks = new Array(50,70,45,89,90);
+
+        var studentList = ["Khoa", "Nghia", "Son", "Tai"];
+
+        var arr1 = [];
+        var arr2 = new Array();
+
+        for(var i = 0; i < studentList.length; i++){
+            document.write("<br>" + studentList[i]);
+        }
+        
+        document.write("<h3> For in</h3>");
+        for(var i in studentList){
+            document.write("<br>" + studentList[i]);
+        }
+
+        document.write("<h3> For of </h3>");
+        for(var x of studentList){
+            document.write("<br>" + x);
+        }
+
+        //Nối 2 array
+        var concate = studentList.concat(marks);
+        document.write("<br> concate is " + concate);
+
+        // Thêm 1 phần tử vào cuối array
+        var pushing = studentList.push("Phong");
+        document.write("<br> pushing is " + pushing);
+
+        // Xóa phần tử cuối array
+        var poping = studentList.pop();
+        document.write("<br> poping is " + popinng);
+
+        // Nối các phần tử lại bằng dấu phân tách
+        var joining = studentList.join("*")
+        document.write("<br> joining is " + joining);
+
+        // Sắp xếp array theo thứ tự A-z
+        var sorting = studentList.sort();
+        document.write("<br> sorting is " + sorting)
+    </script>
+</body>
+</html>
